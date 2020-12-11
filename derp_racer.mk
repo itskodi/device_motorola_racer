@@ -31,6 +31,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit from racer device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Must include in derp
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+
 PRODUCT_BRAND := motorola
 PRODUCT_DEVICE := racer
 PRODUCT_MANUFACTURER := motorola
